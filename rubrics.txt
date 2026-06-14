@@ -1,0 +1,44 @@
+ZAPLO - EVALUATION RUBRICS
+
+R01 | The top navigation bar contains: a logo, exactly 6 category links, a search bar on every page.
+R02 | The header height measures: 80 px on desktop viewports, 64 px on mobile viewports.
+R03 | The footer on every page contains links to About, Contact, Privacy, and Terms.
+R04 | No horizontal scrollbar appears on any page at any viewport width from 320 px upward.
+R05 | The homepage hero section displays the tagline 'One click. One game. Zero wait.' and a 'Play Now' CTA button, with no pop-ups or auto-playing media on load.
+R06 | The homepage displays a 'Now Playing' hero spotlight containing exactly one featured game tile.
+R07 | The homepage displays a 'Trending' row containing exactly 6 game cards.
+R08 | The homepage displays a 'Multiplayer Picks' row containing exactly 6 game cards.
+R09 | The homepage displays exactly 6 category tiles covering: Action, Multiplayer, .io, Racing, Puzzle, Shooting.
+R10 | The search input filters the visible game grid in real time as the user types, without a page reload.
+R11 | The category page reads the 'cat' URL parameter and shows only matching games, with a category title, a short description, and a 'Home > Category Name' breadcrumb at the top.
+R12 | The category page grid reflows from 4 columns on desktop to 3 columns on tablet to 2 columns on mobile.
+R13 | An empty-state message appears when no games match the active search or filter on the category page.
+R14 | Every game card displays a 480x270 px thumbnail, a title truncated at 26 characters, one category badge, and an MP badge when the game is multiplayer.
+R15 | Clicking a game card navigates to game.html with the correct slug parameter for that game.
+R16 | The game detail page places one AdSense banner above a 16:9 iframe and the iframe loads within 3 seconds on simulated 4G.
+R17 | A fullscreen toggle button on the iframe functions correctly on iOS Safari, Chrome Android, and desktop browsers.
+R18 | The game detail page shows the game title, a description under 60 words with no lorem ipsum, and a one-line controls hint below the iframe.
+R19 | The 'More Like This' strip on the game detail page displays exactly 4 related game cards.
+R20 | A 'Share to Play' button appears on every game detail page below the game title.
+R21 | Clicking 'Share to Play' copies the URL zaplo.gg/game.html?slug=<slug>&ref=share to the clipboard.
+R22 | A 'Link copied' toast appears for 2 seconds after a successful Share to Play copy, and a 'Copy failed' toast appears for 2 seconds when the copy is blocked.
+R23 | A visitor landing on a ?ref=share link plays the game directly on its game detail page.
+R24 | The catalog contains exactly 20 playable games that load end-to-end on Chrome, Firefox, Safari, and Edge.
+R25 | Every game carries a license that permits re-hosting (MIT, CC-BY, or GPL-3) and LICENSES.md lists each game with creator, license, and source URL.
+R26 | The About, Contact, Privacy, and Terms pages each render in a single column at max-width 720 px with the same header and footer as the rest of the site.
+R27 | The Contact page uses a mailto:hello@zaplo.gg link only with no form element, and the Privacy page explicitly names Google Analytics 4 and Microsoft Clarity and discloses their cookie usage.
+R28 | One AdSense banner is present on the homepage above the footer and one AdSense banner is present on every game detail page above the iframe.
+R29 | No pop-up ads, interstitial ads, auto-redirects, or crypto-mining scripts appear on any page.
+R30 | The GA4 site tag fires on every page including all static pages, and all analytics scripts are deferred.
+R31 | A GA4 'game_start' event fires when the game iframe loads and a GA4 'game_end' event fires when the user leaves the game detail page.
+R32 | GA4 events 'share_click', 'category_click', and 'search_used' each fire on their respective user interactions.
+R33 | Every page has a unique <title> tag, a unique <meta name="description"> tag, and an SEO-friendly URL such as /game/slug or /category/slug.
+R34 | Open Graph tags are present on all game detail and category pages, and canonical tags are present on all parameterised views.
+R35 | sitemap.xml lists all public-facing pages and robots.txt allows all crawlers.
+R36 | The Lighthouse Mobile Performance score is 85 or above and First Contentful Paint is under 2 seconds on simulated 4G.
+R37 | Total JavaScript outside game iframes is at most 220 KB, non-critical scripts are deferred, and thumbnails below the fold are lazy-loaded.
+R38 | No console errors appear on any page, and README.md includes working setup and deploy instructions.
+R39 | The site loads at most two font families, body text is at least 16 px on mobile, and no script or decorative fonts are used.
+R40 | All text meets WCAG AA contrast, the site uses the dark theme by default, and the palette stays within Electric Lime, Plasma Purple, and Hot Magenta plus background and text neutrals.
+R41 | Pages use a 12-column desktop grid at a maximum content width of 1280 px, with a card gap of at least 16 px and consistent card sizing across pages.
+R42 | The delivery includes a 404 page, a favicon, an Open Graph card image at 1200x630, a games.json catalog, and a brand kit with the logo in SVG and PNG.
